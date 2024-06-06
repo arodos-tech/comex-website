@@ -6,43 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comex</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 </head>
 
 <body>
+    <nav class="navbar sticky top-0 z-20">
+        <div class="flex flex-wrap items-center justify-between py-4 max-w-7xl mx-auto px-4 lg:px-0">
+            <div class="flex justify-center bg-white/80 rounded-md w-36">
+                <a href="#"><img class="w-32" src="images/rlogo.png" alt=""></a>
+            </div>
+            <label for="menu-toggle" class="pointer-cursor md:hidden block">
+                <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="md:flex items-center justify-between text-base text-primary pt-4 md:pt-0 font-semibold">
+                        <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#home">Home</a>
+                        </li>
+                        <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#about">About Us</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#services">Our Services</a>
+                        </li>
+                        <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#product">Products</a></li>
+                        <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:text-accent" href="#contact">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
     <div class="w-full h-full bg-no-repeat bg-cover bg-center bg-[url('https://kitpro.site/excava/wp-content/uploads/sites/130/2022/11/builder-at-the-shop-with-heavy-machinery-2021-09-25-07-24-40-utc-copy.jpg')] relative"
         id="home">
         <div class="bg-black/50 absolute inset-0"></div>
-        <nav class="navbar isolate  lg:sticky top-0 z-20">
-            <div class="flex flex-wrap items-center py-4 max-w-7xl mx-auto px-4 lg:px-0">
-                <div class="flex-1 flex justify-between items-center">
-                    <a href="#" class="text-6xl font-extrabold text-primary">COMEX</a>
-                </div>
-                <label for="menu-toggle" class="pointer-cursor md:hidden block">
-                    <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                        viewBox="0 0 20 20">
-                        <title>menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </label>
-                <input class="hidden" type="checkbox" id="menu-toggle" />
-                <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-                    <nav>
-                        <ul
-                            class="md:flex items-center justify-between text-base text-primary pt-4 md:pt-0 font-semibold">
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#home">Home</a>
-                            </li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#about">About Us</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#services">Our Services</a>
-                            </li>
-                            <li><a class="md:p-4 py-3 px-0 block hover:text-accent" href="#product">Products</a></li>
-                            <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:text-accent" href="#contact">Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </nav>
+
 
         <div
             class="md:max-w-7xl mx-auto h-full flex-col gap-10 flex md:flex-row items-center md:justify-between py-10 isolate px-4 lg:px-0">
@@ -194,10 +195,10 @@
                     <img src="images/service01.png" alt="Coffee"
                         class="h-64 w-full object-cover transition duration-300 ease-in-out hover:scale-110" />
                     <div class="p-6 text-center">
-                        <h3 class="mb-2 text-xl font-medium text-gray-800">Slurry Separation Process</h3>
+                        <h3 class="mb-2 text-xl font-medium text-gray-800">Slurry treatment plant</h3>
                         <p class="text-base text-gray-700">
-                            Very effective in dealing with clay blocks and meshes. Never get stuck. Featuring large
-                            processing capacity. Simple design, Low cost for operation and maintenance.
+                            Slurry treatment plant for Tunnel boring Machine (TBM) used in Tunnel project.
+                            Work- Design, Engineering, manufacturing & Supply.
                             <!-- <details>
                             <summary>Read More</summary>
                             <p>It has survived not only five centuries, but also the leap into electronic
@@ -216,10 +217,11 @@
                     <img src="images/service02.png" alt="Coffee"
                         class="h-64 w-full object-cover transition duration-300 ease-in-out hover:scale-110" />
                     <div class="p-6 text-center">
-                        <h3 class="mb-2 text-xl font-medium text-gray-800">Slurry Management System</h3>
+                        <h3 class="mb-2 text-xl font-medium text-gray-800">Engineering and design work</h3>
                         <p class="text-base text-gray-700">
-                            The system consists of fresh slurry manufacture tank, fresh slurry pump, fresh slurry
-                            storage tank, CMC agitating tank, CMC agitator, CMC pump, CMC storage tank, valve, etc.
+                            Engineering and design work For all types of drawing works, which covers preparation of
+                            Basic , Detail & Design
+                            engineering drawings by using Autocad, Tekla, Bocad, Staad Pro.
                             <!-- <details>
                             <summary>Read More</summary>
                             <p>It has survived not only five centuries, but also the leap into electronic
@@ -238,7 +240,7 @@
                     <img src="images/service03.png" alt="Coffee"
                         class="h-64 w-full object-cover transition duration-300 ease-in-out hover:scale-110" />
                     <div class="p-6 text-center">
-                        <h3 class="mb-2 text-xl font-medium text-gray-800">Filter-press Process</h3>
+                        <h3 class="mb-2 text-xl font-medium text-gray-800">Filter Press Machine</h3>
                         <p class="text-base text-gray-700">
                             Main oil cylinder drives mobile plate to close allfilter chambers. By using hydraulically
                             driven membrane pump, slurry is filled into filter chamber formed by two adjacent filter
@@ -636,9 +638,9 @@
                                     class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]">
                                     <img src="svg/mail.svg" alt="">
                                 </div>
-                                <a target="blank" href="mailto:sumitsarkar2036@gmail.com"
+                                <a target="blank" href="mailto:castogarmendia@gmail.com"
                                     class="ml-3 text-sm text-accent">
-                                    <strong>sumitsarkar2036@gmail.com</strong>
+                                    <strong>castogarmendia@gmail.com</strong>
                                 </a>
                             </li>
                         </ul>
@@ -685,11 +687,9 @@
         <div class="mx-auto w-full max-w-7xl px-4 xl:px-0">
             <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                 <div class="md:w-80">
-                    <p class="font-medium text-white">
-                    <h1 class="text-white text-4xl font-extrabold">
-                        <span class="text-primary">Comex</span>
-                    </h1>
-                    </p>
+                    <div class="flex justify-center bg-white/80 rounded- w-36">
+                        <a href="#"><img class="w-32" src="images/rlogo.png" alt=""></a>
+                    </div>
                     <p class="mt-[18px] text-[15px] font-normal text-primary">Comex has being performed continously
                         technological innovation. Based on imported foreign advanced technology in combination of actual
                         conditions in various industries in China, Comex has developed series of products and
@@ -724,9 +724,8 @@
                             <img src="svg/phone.svg" alt="">
                         </div>
                         <div class="ml-[18px]">
-                            <a href="tel:+918778613697" class=" text-md font-medium text-primary hover:text-accent">+91
-                                87876
-                                13697</a>
+                            <a href="tel:+918778613697" class=" text-md font-medium text-primary hover:text-accent">+
+                                00-34-60966 4451</a>
 
                         </div>
                     </div>
@@ -735,8 +734,8 @@
                             <img src="svg/fmail.svg" alt="">
                         </div>
                         <div class="ml-[18px]">
-                            <a href="mailto:sumitsarkar2036@gmail.com"
-                                class=" text-md font-medium text-primary hover:text-accent">sumitsarkar2036@gmail.com</a>
+                            <a href="mailto:castogarmendia@gmail.com"
+                                class=" text-md font-medium text-primary hover:text-accent">castogarmendia@gmail.com</a>
 
                         </div>
                     </div>
@@ -746,8 +745,8 @@
                         </div>
                         <div class="ml-[18px]">
                             <a href="mailto:help@lorem.com"
-                                class=" text-md font-medium text-primary hover:text-accent">Flat
-                                no-1A1, Puberun Apartment, Beltola, 781028</a>
+                                class=" text-md font-medium text-primary hover:text-accent">Almirante
+                                , Arizemendi23,Irun, Guipuzcoa, Spain</a>
 
                         </div>
                     </div>
