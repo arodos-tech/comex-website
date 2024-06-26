@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:white; scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comex</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar fixed w-full top-0 z-50  bg-black/75">
+        <div class="flex flex-wrap items-center justify-between py-4 max-w-7xl mx-auto px-4 lg:px-0">
+            <div class="flex justify-center bg-white/80 rounded-md w-36">
+                <a href="reference.html"><img class="w-32" src="images/rlogo.png" alt=""></a>
+            </div>
+            <label onclick="menuToggle()" for="menu-toggle" id="barsIcon" class="cursor-pointer md:hidden block">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="md:flex md:bg-transparent hidden -translate-y-full md:translate-y-0 md:items-center md:w-auto w-full"
+                id="menu">
+                <nav>
+                    <ul
+                        class="md:flex items-center space-y-2 md:space-y-0 justify-between text-base text-primary pt-4 md:pt-0 font-semibold">
+                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">Home</a>
+                        </li>
+                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">About Us</a></li>
+                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">Our Services</a>
+                        </li>
+                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">Products</a></li>
+                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">Reference</a></li>
+                        <li><a class="md:p-4 py-3 px-2 block md:mb-0 mb-2 hover:text-accent bg-black/75 md:bg-transparent"
+                                href="index.html">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- hero -->
+    <div class="w-full pt-28 h-screen bg-no-repeat bg-cover bg-center bg-[url('./images/hero-reference.png')] relative"
+        id="home">
+        <div class="bg-black/50 absolute inset-0"></div>
+
+
+        <div
+            class="md:max-w-7xl mx-auto h-full flex-col gap-10 flex md:flex-row items-center md:justify-between py-10 isolate px-4 lg:px-0">
+
+            <div class="lg:w-full">
+                <div class="md:text-3xl lg:text-4xl text-2xl flex-col space-y-4  text-primary text-left font-extrabold">
+
+                    <h1>Main Performances of COMEX STP </h1>
+                    <h1>With Supporting Various </h1>
+                    <h1>Shield Manufacaturers.</h1>
+                    <h1></h1>
+                </div>
+
+                <a href="#about">
+                    <div
+                        class="w-52 flex items-center justify-between mt-8 py-2 px-4 uppercase bg-accent rounded-lg  cursor-pointer hover:scale-110 duration-300">
+                        <h3 class="text-white text-lg font-semibold">Learn More</h3>
+                        <div class="w-[25%] flex items-center text-white text-4xl gap-0">
+                            <hr class="w-full border border-white relative -right-3" />
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="bg-primary py-20" id="product">
+        <h2 class="mb-8 text-center text-3xl font-bold text-accent">Mejor Shield Manufcaturers with Comex STP</h2>
+        <div class=" mx-auto px-4 md:px-0 max-w-7xl">
+            <div class="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
+                <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                    <div class="mt-4 space-y-8">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Chin Railway Construction Heavy Industry
+                                    Group Co. Ltd.</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">China Railway Engineering Equipment Group Co.
+                                    Ltd.</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Zhongjiaotanghe Mechanical Equipment
+                                    Manufacturing Co. Ltd.</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Shenyang Heeavy Industry Co.</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Herrenknecht Shield Machine</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Mitsubishi Shield Machine</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Komatsu Shield Machine</h4>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-md">
+                                    <img src="svg/mark.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium leadi ">Framatome Shield Machine</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <div class="-m-1 mb-2 flex w-full">
+                            <div class="">
+                                <div class="border-b-secondary  overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/min.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container max-w-xl p-6 mx-auto mt-8 space-y-12 lg:px-8 lg:max-w-7xl">
+                <div>
+                    <h2 class="mb-8 text-center text-3xl font-bold text-accent">Slurry Treatment Plant
+                    </h2>
+
+                </div>
+                <div class=" lg:gap-8 flex-col lg:items-center">
+
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <div class="-m-1 mb-2 flex w-full flex-col md:-m-2 md:flex-row">
+                            <div class="flex w-full flex-wrap">
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/s1.png" />
+                                </div>
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/s2.png" />
+                                </div>
+                                <div class="border-b-secondary w-full overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/s3.png" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container max-w-xl p-6 mx-auto mt-8 space-y-12 lg:px-8 lg:max-w-7xl">
+                <div>
+                    <h2 class="mb-8 text-center text-3xl font-bold text-accent">Filter Press Machine
+                    </h2>
+
+                </div>
+                <div class=" lg:gap-8 flex-col lg:items-center">
+
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <div class="-m-1 mb-2 flex w-full flex-col md:-m-2 md:flex-row">
+                            <div class="flex w-full flex-wrap">
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/f1.png" />
+                                </div>
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/f2.png" />
+                                </div>
+                                <div class="border-b-secondary w-full overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/f3.png" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container max-w-xl p-6 mx-auto mt-8 space-y-12 lg:px-8 lg:max-w-7xl">
+                <div>
+                    <h2 class="mb-8 text-center text-3xl font-bold text-accent">Engineering & Drawing Work
+                    </h2>
+
+                </div>
+                <div class=" lg:gap-8 flex-col lg:items-center">
+
+                    <div aria-hidden="true" class="mt-10 lg:mt-0">
+                        <div class="-m-1 mb-2 flex w-full flex-col md:-m-2 md:flex-row">
+                            <div class="flex w-full flex-wrap">
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/service02.png" />
+                                </div>
+                                <div class="border-b-secondary w-1/2 overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/product04.png" />
+                                </div>
+                                <div class="border-b-secondary w-full overflow-hidden rounded-xl border-2">
+                                    <img alt="gallery"
+                                        class="block h-full w-full object-cover object-center transition duration-300 ease-in-out hover:scale-110"
+                                        src="images/e1.png" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="relative h-[40rem] w-full">
+        <img src="images/rbanner.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4">
+            <h1 class="text-2xl lg:text-4xl text-center px-10 lg:px-0 text-primary md:font-bold uppercase ">For more
+                information
+                download our brochure
+            </h1>
+            <div
+                class="w-52 flex items-center justify-between mt-8 py-3 px-4 uppercase bg-accent rounded-lg  cursor-pointer hover:scale-110 duration-300">
+                <h3 class="text-white text-xl font-bold">download</h3>
+                <div class="w-[25%] flex items-center text-white text-4xl gap-0">
+                    <hr class="w-full border border-white relative -right-3" />
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class=" bg-secondary pt-9">
+        <div class="mx-auto w-full max-w-7xl px-4 xl:px-0">
+            <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
+                <div class="md:w-80">
+                    <div class="flex justify-center bg-white/80 rounded- w-36">
+                        <a href="index.html"><img class="w-32" src="images/rlogo.png" alt=""></a>
+                    </div>
+                    <p class="mt-[18px] text-[15px] font-normal text-primary">Comex has being performed continously
+                        technological innovation. Based on imported foreign advanced technology in combination of actual
+                        conditions in various industries in China, Comex has developed series of products and
+                        technologies, which are tailored to demestic entriprises.</p>
+                    <div class="mt-[18px] flex gap-4">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]/10">
+                            <a href="javascript:void(0)">
+                                <img src="svg/fb.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]/10">
+                            <a href="javascript:void(0)">
+                                <img src="svg/link.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]/10">
+                            <a href="javascript:void(0)">
+                                <img src="svg/insta.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]/10">
+                            <a href="javascript:void(0)">
+                                <img src="svg/mail.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="md:w-80">
+                    <div class="mt-6 flex">
+                        <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
+                            <img src="svg/phone.svg" alt="">
+                        </div>
+                        <div class="ml-[18px]">
+                            <a href="tel:+91 96301 69938" class=" text-md font-medium text-primary hover:text-accent">
+                                +91 96301 69938</a>
+
+                        </div>
+                    </div>
+                    <div class="mt-6 flex">
+                        <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
+                            <img src="svg/fmail.svg" alt="">
+                        </div>
+                        <div class="ml-[18px]">
+                            <a href="mailto:comespressfilters@gmail.com"
+                                class=" text-md font-medium text-primary hover:text-accent">comespressfilters@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex">
+                        <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
+                            <img src="svg/faddress.svg" alt="">
+                        </div>
+                        <div class="ml-[18px]">
+                            <p class="text-xl text-white font-semibold">Head Office</p>
+                            <a href="" class=" text-md  text-primary hover:text-accent pt-2">Almirante
+                                , Arizemendi23,Irun, Guipuzcoa, Spain</a>
+                            <a href="tel:+00 34 609664451" class=" text-md font-medium text-primary hover:text-accent">
+                                +00 34 609664451</a>
+                            <p class="text-xl text-white font-semibold mt-2">India Office</p>
+                            <a href="" class=" text-md  text-primary hover:text-accent mt-2">H No. 4 MV
+                                Puram, AB
+                                Road, Gwalior MP-474004</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex w-full flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
+                    <div class="">
+                        <p class="text-deutziawhite  text-2xl font-medium leading-normal">Pages</p>
+                        <ul>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">Home</a></li>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">About Us</a></li>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">Our Services</a></li>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">Products</a></li>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">Reference</a></li>
+                            <li class="mt-4"><a
+                                    class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
+                                    href="index.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="mt-6 flex flex-col gap-4 sm:mt-0">
+                        <!-- <p class="text-deutziawhite  text-2xl font-medium">Lorem Ipsum</p> -->
+                        <!-- <div class="flex gap-4 sm:flex-col">
+                            <a target="_blank" href="#"><img alt="facebook icon" loading="lazy" width="168" height="50"
+                                    decoding="async" data-nimg="1" style="color:transparent"
+                                    src="https://image2.jdomni.in/banner/13062021/D2/99/0D/48D7F4AFC48C041DC8D80432E9_1623562146900.png?output-format=webp" /></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-[30px] text-primary" />
+            <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+                <div class="font-natosans w-full text-center text-white">
+                    <p>&copy; Copyright 2024 | Comex | All Rights Reserved.</p>
+                    <p>Designed by <b> <a class="isolate hover:text-accent duration-300" href="https://arodos.com/"
+                                target="_blank">Arodos
+                                Technologies</a> </b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script>
+
+    window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        if (window.scrollY > 0) {
+            navbar.classList.add("md:bg-black/75");
+            navbar.classList.remove("md:bg-transparent");
+        } else {
+            navbar.classList.remove("md:bg-black/75");
+            navbar.classList.add("md:bg-transparent");
+
+        }
+    });
+
+    function menuToggle() {
+        const barsIcon = document.getElementById("barsIcon");
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("translate-y-0");
+        menu.classList.toggle("hidden");
+    }
+</script>
+
+</html>
