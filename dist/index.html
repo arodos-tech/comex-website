@@ -11,7 +11,7 @@
 
 <body>
     <nav class="navbar fixed w-full top-0 z-50 md:bg-black/75 bg-black">
-        <div class="flex flex-wrap items-center justify-between md:py-4 py-2 max-w-7xl mx-auto px-4 lg:px-0">
+        <div class="flex flex-wrap items-center justify-between md:py-4 py-2 max-w-7xl mx-auto px-4">
             <a href="#home">
                 <div class="flex justify-center text-white rounded-md w-fit">
                     <h1 class="text-2xl md:text-4xl font-bold  text-center"><span
@@ -34,18 +34,18 @@
                 <nav>
                     <ul
                         class="md:flex items-center space-y-2 md:space-y-0 justify-between text-base md:bg-transparent text-primary pt-4 md:pt-0 font-semibold">
-                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent md:bg-transparent" href="#home">Home</a>
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block hover:text-accent md:bg-transparent" href="#home">Home</a>
                         </li>
-                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent md:bg-transparent" href="#about">About
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block hover:text-accent md:bg-transparent" href="#about">About
                                 Us</a></li>
-                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent md:bg-transparent" href="#services">Our
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block hover:text-accent md:bg-transparent" href="#services">Our
                                 Services</a>
                         </li>
-                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent md:bg-transparent"
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block hover:text-accent md:bg-transparent"
                                 href="#product">Products</a></li>
-                        <li><a class="md:p-4 py-3 px-2 block hover:text-accent md:bg-transparent"
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block hover:text-accent md:bg-transparent"
                                 href="#reference">Reference</a></li>
-                        <li><a class="md:p-4 py-3 px-2 block md:mb-0 mb-2 hover:text-accent md:bg-transparent"
+                        <li onclick="menuToggle()"><a class="md:p-4 py-0.5 px-2 block md:mb-0 mb-2 hover:text-accent md:bg-transparent"
                                 href="#contact">Contact
                                 Us</a>
                         </li>
@@ -54,6 +54,7 @@
             </div>
         </div>
     </nav>
+
     <!-- hero -->
     <div class="w-full pt-28 h-full md:h-screen bg-no-repeat bg-cover bg-center bg-[url('https://kitpro.site/excava/wp-content/uploads/sites/130/2022/11/builder-at-the-shop-with-heavy-machinery-2021-09-25-07-24-40-utc-copy.jpg')] relative"
         id="home">
@@ -61,7 +62,7 @@
 
 
         <div
-            class="md:max-w-7xl mx-auto h-full flex-col gap-10 flex md:flex-row items-center md:justify-between py-10 isolate px-4 lg:px-0">
+            class="max-w-7xl mx-auto h-full flex-col gap-10 flex md:flex-row items-center md:justify-between py-10 isolate px-4">
 
             <div class="lg:w-[60%]">
                 <div class="md:text-3xl lg:text-4xl text-2xl flex-col space-y-2  text-primary text-left font-extrabold">
@@ -87,7 +88,7 @@
                     </a>
                 </div>
             </div>
-            <div class="w-80 border-white border-4 h-96 backdrop-blur-md p-6">
+            <div class="w-full sm:w-80 border-white border-4 h-96 backdrop-blur-md p-6">
                 <p class="text-accent text-xl font-semibold">Our Motto</p>
                 <p class="text-primary text-2xl pt-8 font-bold pb-12">Quality lays foundation, Service creates future
                 </p>
@@ -98,12 +99,13 @@
             </div>
         </div>
     </div>
+
     <!-- about-us -->
     <div class="bg-primary w-full py-20" id="about">
-        <div class="mx-auto max-w-7xl flex flex-col lg:flex-row gap-10 justify-between">
+        <div class="mx-auto max-w-7xl flex flex-col lg:flex-row gap-10 justify-between px-4">
 
 
-            <div class="w-full lg:w-1/2 text-secondary px-4 lg:px-0">
+            <div class="w-full lg:w-1/2 text-secondary ">
                 <div>
                     <h4 class="text-accent text-3xl font-bold">ABOUT US</h4>
                     <h1 class="text-2xl md:text-4xl font-bold mt-2">Comex India is the Indian partner of Comex(BJ)
@@ -205,13 +207,12 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
     <!-- our-services -->
     <div class="bg-custom py-20" id="services">
 
-        <div class=" mx-auto px-4 md:px-0 max-w-7xl">
+        <div class=" mx-auto px-4 max-w-7xl">
             <h2 class="mb-6 text-left md:text-center text-3xl font-bold text-accent">OUR SERVICES</h2>
             <h1 class="text-2xl md:text-4xl font-bold  text-left md:text-center">Caring for You with Excellence and
                 Empathy</h1>
@@ -346,15 +347,16 @@
         </div>
 
     </div>
+
     <!-- products -->
     <div class="bg-primary py-20" id="product">
         <h2 class="mb-14 px-4 text-left md:text-center text-3xl font-bold text-accent">OUR PRODUCTS</h2>
         <div class=" mx-auto px-4 md:px-0 max-w-7xl">
-            <div class="container max-w-xl mx-auto space-y-8 lg:px-6 lg:max-w-7xl">
+            <div class="container max-w-xl mx-auto space-y-8 lg:max-w-7xl">
 
                 <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div class="space-y-4 h-full">
-                        <div class="flex items-center pb-6 text-left md:pl-4 pl-0">
+                        <div class="flex items-center pb-6 text-left md:pl-2 pl-0">
                             <img class="h-20 w-10 " src="svg/line.svg" alt="">
                             <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Slurry Treatment
                                 Plant</h2>
@@ -434,7 +436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container max-w-xl  mx-auto mt-8 space-y-8 lg:px-8 lg:max-w-7xl">
+            <div class="container max-w-xl  mx-auto mt-8 space-y-8  lg:max-w-7xl">
 
                 <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div aria-hidden="true" class="lg:mt-0">
@@ -453,7 +455,7 @@
                     <div>
                         <div>
                             <div class="mt-4 space-y-4">
-                                <div class="flex items-center pb-6 text-left md:pl-4">
+                                <div class="flex items-center pb-6 text-left md:pl-2">
                                     <img class="h-24 w-10  " src="svg/line.svg" alt="">
                                     <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Slurry Handling
                                         equipment
@@ -520,7 +522,7 @@
 
                 </div>
             </div>
-            <!-- <div class="container max-w-xl p-6 mx-auto mt-8 space-y-12 lg:px-8 lg:max-w-7xl">
+            <!-- <div class="container max-w-xl p-6 mx-auto mt-8 space-y-12  lg:max-w-7xl">
                 <div>
                     <h2 class="text-3xl font-bold text-center sm:text-4xl">Earth filtration equipment</h2>
 
@@ -595,13 +597,13 @@
                     </div>
                 </div>
             </div> -->
-            <div class="container max-w-xl  mx-auto mt-8 space-y-8 lg:px-8 lg:max-w-7xl">
+            <div class="container max-w-xl  mx-auto mt-8 space-y-8  lg:max-w-7xl">
 
                 <div class="grid lg:gap-8 gap-10 lg:grid-cols-2 lg:items-center">
                     <div>
                         <div class="mt-4 ">
-                            <div class="flex pb-6 text-left items-center md:pl-4 md:pt-20">
-                                <img class="h-20 w-10 " src="svg/line.svg" alt="">
+                            <div class="flex pb-6 text-left items-center md:pl-1 md:pt-20">
+                                <img class="h-full w-10 " src="svg/line.svg" alt="">
                                 <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Vertical plate
                                     type filter
                                     press machine</h2>
@@ -713,6 +715,7 @@
 
         </div>
     </div>
+
     <!-- banner -->
     <div class="relative h-[40rem] w-full">
         <img src="images/banner.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter">
@@ -726,6 +729,7 @@
             </h1>
         </div>
     </div>
+
     <!-- reference-->
     <div class="bg-primary py-20" id="reference">
 
@@ -937,6 +941,7 @@
 
         </div>
     </div>
+
     <!-- banner -->
     <div class="relative h-[40rem] w-full">
         <img src="images/rbanner.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter">
@@ -956,13 +961,14 @@
             </div>
         </div>
     </div>
+    
     <!-- contact us -->
     <div class="bg-custom py-20" id="contact">
 
         <div class=" mx-auto px-4 md:px-0 max-w-7xl">
             <h2 class="mb-8 text-left md:text-center text-3xl font-bold text-accent">CONTACT US</h2>
             <div
-                class="mx-auto grid max-w-4xl items-center gap-16 rounded-md bg-white p-8 font-[sans-serif] text-secondary sm:grid-cols-2">
+                class="mx-auto grid max-w-4xl items-center gap-10 md:gap-16 rounded-md bg-white p-8 font-[sans-serif] text-secondary md:grid-cols-2">
                 <div>
                     <h1 class="text-3xl font-extrabold">Let's Talk</h1>
                     <p class="mt-3 text-md text-secondary">We will get back to you...</p>
@@ -1026,7 +1032,7 @@
                         class="w-full rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
                     <input type="text" id="subject" placeholder="Subject"
                         class="w-full  rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
-                    <textarea placeholder="Message" required id="massage" rows="6"
+                    <textarea placeholder="Message" required id="message" rows="6"
                         class="w-full rounded-md border px-4 pt-2.5 text-sm outline-[#22C55E]"></textarea>
                     <button type="submit"
                         class="w-full rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white hover:bg-accent/80">Send</button>
@@ -1037,10 +1043,11 @@
             </div>
         </div>
     </div>
+    
     <!-- footer -->
     <div class=" bg-secondary pt-10">
-        <div class="mx-auto w-full max-w-7xl px-4 xl:px-0">
-            <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
+        <div class="mx-auto w-full max-w-7xl px-4">
+            <div class="flex flex-col justify-between sm:px-[18px] md:flex-row">
                 <div class="md:w-80">
                     <a href="#home">
                         <div class="flex justify-center text-white rounded- w-fit">
@@ -1084,22 +1091,22 @@
                     <div class="">
                         <p class="text-deutziawhite  text-2xl font-medium leading-normal">Important Links</p>
                         <ul>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#home">Home</a></li>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#about">About Us</a></li>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#services">Our Services</a></li>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#product">Products</a></li>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#reference">Reference</a></li>
-                            <li class="mt-4"><a
+                            <li class="mt-2"><a
                                     class="text-deutziawhite hover:text-accent  text-md font-normal hover:font-semibold"
                                     href="#contact">Contact Us</a></li>
 
@@ -1121,7 +1128,7 @@
                         <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
                             <img src="svg/phone.svg" alt="">
                         </div>
-                        <div class="ml-[18px]">
+                        <div class="ml-1">
                             <a href="tel:+91 96301 69938" class=" text-md font-medium text-primary hover:text-accent">
                                 +91 96301 69938</a>
 
@@ -1131,7 +1138,7 @@
                         <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
                             <img src="svg/fmail.svg" alt="">
                         </div>
-                        <div class="ml-[18px]">
+                        <div class="ml-2">
                             <a href="mailto:comespressfilters@gmail.com"
                                 class=" text-md font-medium text-primary hover:text-accent">comespressfilters@gmail.com</a>
                         </div>
@@ -1140,14 +1147,14 @@
                         <div class="flex h-7 w-9 items-center justify-center rounded-[75%]">
                             <img src="svg/faddress.svg" alt="">
                         </div>
-                        <div class="ml-6">
-                            <p class="text-xl text-white font-semibold">Head Office</p>
-                            <a href="" class=" text-md  text-primary hover:text-accent pt-2">Almirante
+                        <div class="ml-2">
+                            <p class="text-base text-white font-semibold">Head Office</p>
+                            <a href="" class=" text-sm  text-primary hover:text-accent pt-2">Almirante
                                 , Arizemendi23,Irun, Guipuzcoa, Spain</a>
                             <a href="tel:+00 34 609664451" class=" text-md font-medium text-primary hover:text-accent">
                                 +00 34 609664451</a>
-                            <p class="text-xl text-white font-semibold mt-2">India Office</p>
-                            <a href="" class=" text-md  text-primary hover:text-accent mt-2">H No. 4 MV
+                            <p class="text-base text-white font-semibold mt-2">India Office</p>
+                            <a href="" class=" text-sm  text-primary hover:text-accent mt-2">H No. 4 MV
                                 Puram, AB
                                 Road, Gwalior MP-474004</a>
 
@@ -1167,6 +1174,33 @@
             </div>
         </div>
     </div>
+
+     <button
+      onclick="topFunction()"
+      id="scroll-to-top"
+      class="fixed bottom-16 hidden font-bold border border-slate-300 cursor-pointer rounded-full bg-slate-500 text-white group right-14 size-10 justify-center items-center"
+    >
+      <svg
+        class="w-4 group-hover:size-5 duration-200 stroke-2 text-white"
+        fill="currentColor"
+        version="1.1"
+        id="Layer_1"
+        viewBox="0 0 511.735 511.735"
+        
+      >
+        <g>
+          <g>
+            <path
+            stroke="currentColor"
+            stroke-width="18"
+              d="M508.788,371.087L263.455,125.753c-4.16-4.16-10.88-4.16-15.04,0L2.975,371.087c-4.053,4.267-3.947,10.987,0.213,15.04
+    			c4.16,3.947,10.667,3.947,14.827,0l237.867-237.76l237.76,237.76c4.267,4.053,10.987,3.947,15.04-0.213
+    			C512.734,381.753,512.734,375.247,508.788,371.087z"
+            />
+          </g>
+        </g>
+      </svg>
+    </button>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1192,30 +1226,11 @@
         menu.classList.toggle("hidden");
     }
 </script>
+
+
 <!-- emailsend -->
 <script>
-    // async function uploadFile(file) {
-    //     const formData = new FormData();
-    //     formData.append("folder", "connect-eng/attachments");
-    //     formData.append("image", file);
-
-    //     try {
-    //         const response = await fetch("https://uploads.backendservices.in/api", {
-    //             method: "POST",
-    //             headers: {
-    //                 username: "arodos",
-    //                 password: "arodos",
-    //             },
-    //             body: formData,
-    //         });
-
-    //         const res = await response.json();
-    //         return res.files.image;
-    //     } catch (error) {
-    //         console.error("Error:", error);
-    //     }
-    // }
-
+    
     async function sendEmail() {
         event.preventDefault();
         const name = document.getElementById("name").value;
@@ -1234,7 +1249,7 @@
             to: [
                 {
                     name: "Comex India",
-                    email: "sumitsarkar2036@gmail.com",
+                    email: "bishalroy565@gmail.com",
                 },
             ],
             subject: "Comex India Website Enquiry",
@@ -1250,8 +1265,6 @@
                           Message: ${message} 
                       </div>
                       <br>
-                    
-                }
                    </div>`,
         };
 
@@ -1263,6 +1276,7 @@
                 const data = await res.json();
                 if (data.err === false) {
                     document.getElementById("form").reset();
+
                     success.classList.remove("hidden");
                     setTimeout(() => {
                         success.classList.add("hidden");
@@ -1275,6 +1289,25 @@
     }
 
 
+</script>
+
+<!-- scroll to top -->
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+    window.addEventListener("scroll", () => {
+        const scrolltotop = document.getElementById("scroll-to-top");
+        if (window.pageYOffset > 500) {
+          scrolltotop.classList.add("flex");
+          scrolltotop.classList.remove("hidden");
+        } else {
+          scrolltotop.classList.add("hidden");
+          scrolltotop.classList.remove("flex");
+        }
+      });
 </script>
 
 </html>
