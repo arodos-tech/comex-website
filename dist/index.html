@@ -12,12 +12,15 @@
 <body>
     <nav class="navbar fixed w-full top-0 z-50 md:bg-black/75 bg-black">
         <div class="flex flex-wrap items-center justify-between md:py-4 py-2 max-w-7xl mx-auto px-4 lg:px-0">
-            <div class="flex justify-center text-white rounded-md w-fit">
-                <h1 class="text-2xl md:text-4xl font-bold  text-center"><span
-                        class="text-red-600 font-bold">C</span>omex <span class="text-accent font-bold">I</span>ndia
-                </h1>
-                <!-- <a href="#"><img class="w-28 h-16 md:w-32" src="images/rlogo.png" alt=""></a> -->
-            </div>
+            <a href="#home">
+                <div class="flex justify-center text-white rounded-md w-fit">
+                    <h1 class="text-2xl md:text-4xl font-bold  text-center"><span
+                            class="text-red-600 font-bold">C</span>omex <span class="text-accent font-bold">I</span>ndia
+                    </h1>
+                    <!-- <a href="#"><img class="w-28 h-16 md:w-32" src="images/rlogo.png" alt=""></a> -->
+                </div>
+            </a>
+
             <label onclick="menuToggle()" for="menu-toggle" id="barsIcon" class="cursor-pointer md:hidden block">
                 <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                     viewBox="0 0 20 20">
@@ -352,7 +355,7 @@
                 <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div class="space-y-4 h-full">
                         <div class="flex items-center pb-6 text-left md:pl-4 pl-0">
-                            <img class="h-20 w-10 md:hidden" src="svg/line.svg" alt="">
+                            <img class="h-20 w-10 " src="svg/line.svg" alt="">
                             <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Slurry Treatment
                                 Plant</h2>
                         </div>
@@ -451,7 +454,7 @@
                         <div>
                             <div class="mt-4 space-y-4">
                                 <div class="flex items-center pb-6 text-left md:pl-4">
-                                    <img class="h-20 w-10 md:hidden" src="svg/line.svg" alt="">
+                                    <img class="h-24 w-10  " src="svg/line.svg" alt="">
                                     <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Slurry Handling
                                         equipment
                                     </h2>
@@ -598,7 +601,7 @@
                     <div>
                         <div class="mt-4 ">
                             <div class="flex pb-6 text-left items-center md:pl-4 md:pt-20">
-                                <img class="h-20 w-10 md:hidden" src="svg/line.svg" alt="">
+                                <img class="h-20 w-10 " src="svg/line.svg" alt="">
                                 <h2 class="text-2xl font-bold text-left md:text-left md:text-4xl">Vertical plate
                                     type filter
                                     press machine</h2>
@@ -715,7 +718,8 @@
         <img src="images/banner.png" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center px-4">
-            <h1 class="text-2xl lg:text-4xl text-center md:space-y-5 px-2 lg:px-52 text-primary md:font-semibold">
+            <h1
+                class="text-2xl lg:text-4xl text-left md:text-center md:space-y-5 px-2 lg:px-52 text-primary md:font-semibold">
                 <p>With good reputation until now, Comex product APN series filter press is</p>
                 <p> honored to get authentication of</p>
                 <p>ISO 9001:2008 Quality Certification System.</p>
@@ -1016,11 +1020,13 @@
                 <form id="form" onsubmit="sendEmail()" class="ml-auo space-y-4">
                     <input type="text" id="name" required placeholder="Name"
                         class="w-full rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
-                    <input type="email" id="email" required placeholder="Email"
+                    <input type="email" id="email" placeholder="Email"
+                        class="w-full rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
+                    <input type="tel" id="phone" required placeholder="phone"
                         class="w-full rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
                     <input type="text" id="subject" placeholder="Subject"
                         class="w-full  rounded-md border px-4 py-2.5 text-sm outline-[#22C55E]" />
-                    <textarea placeholder="Message" id="massage" rows="6"
+                    <textarea placeholder="Message" required id="massage" rows="6"
                         class="w-full rounded-md border px-4 pt-2.5 text-sm outline-[#22C55E]"></textarea>
                     <button type="submit"
                         class="w-full rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white hover:bg-accent/80">Send</button>
@@ -1036,12 +1042,15 @@
         <div class="mx-auto w-full max-w-7xl px-4 xl:px-0">
             <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                 <div class="md:w-80">
-                    <div class="flex justify-center text-white rounded- w-fit">
-                        <h1 class="text-2xl md:text-4xl font-bold  text-center"><span
-                                class="text-red-600 font-bold">C</span>omex <span
-                                class="text-accent font-bold">I</span>ndia
-                        </h1>
-                    </div>
+                    <a href="#home">
+                        <div class="flex justify-center text-white rounded- w-fit">
+                            <h1 class="text-2xl md:text-4xl font-bold  text-center"><span
+                                    class="text-red-600 font-bold">C</span>omex <span
+                                    class="text-accent font-bold">I</span>ndia
+                            </h1>
+                        </div>
+                    </a>
+
                     <p class="mt-[18px] text-[15px] font-normal text-primary">Comex has being performed continously
                         technological innovation. Based on imported foreign advanced technology in combination of actual
                         conditions in various industries in China, Comex has developed series of products and
@@ -1211,19 +1220,16 @@
         event.preventDefault();
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.getElementById("subject").value;
         const message = document.getElementById("message").value;
         const form = document.querySelector("#form");
         const success = document.querySelector("#success");
 
-        const path = file ? await uploadFile(file) : null;
-        const filePath = path
-            ? "https://uploads.backendservices.in/storage/" + path
-            : null;
-
         const body = {
             from: {
                 name: `${name}`,
-                email: "mousumidebnath2033@gmail.com",
+                email: "comex@arodos.com",
             },
             to: [
                 {
@@ -1234,11 +1240,12 @@
             subject: "Comex India Website Enquiry",
             htmlpart: `<div>
                       <div style="padding-bottom: 10px;">
-                          <b> ConnectENG Enquiry Form:</b> 
+                          <b> Comex India Enquiry Form:</b> 
                       </div>
                       Name: ${name} <br> 
-                      Phone No.: ${phone} <br> 
-                      Email: ${email}
+                      Email: ${email}<br>
+                      Phone No: ${phone} <br> 
+                      Subject: ${subject}<br>
                       <div style="padding-top: 10px;">
                           Message: ${message} 
                       </div>
@@ -1256,16 +1263,6 @@
                 const data = await res.json();
                 if (data.err === false) {
                     document.getElementById("form").reset();
-                    document.getElementById("display-image").innerHTML = "";
-                    clearFile();
-
-                    // form.addEventListener("submit", () => {
-                    //   console.log("sent");
-                    //   success.classList.remove("hidden");
-                    //   setTimeout(() => {
-                    //     success.classList.add("hidden");
-                    //   }, 5000);
-                    // });
                     success.classList.remove("hidden");
                     setTimeout(() => {
                         success.classList.add("hidden");
@@ -1278,11 +1275,6 @@
     }
 
 
-
-    // Function to clear the selected file
-
-    // Add event listener for the close icon
-    document.getElementById("close-icon").addEventListener("click", clearFile);
 </script>
 
 </html>
