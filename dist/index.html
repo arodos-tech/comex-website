@@ -13,13 +13,11 @@
     <nav class="navbar fixed w-full top-0 z-50 md:bg-black/75 bg-black">
         <div class="flex flex-wrap items-center justify-between md:py-4 py-2 max-w-7xl mx-auto px-4">
             <a href="#home">
-                <div class="flex  justify-center md:gap-6 gap-4 items-center text-white rounded-md w-fit">
-                    <div class="rounded-full bg-white/85 md:h-28 md:w-28  h-24 w-24 flex justify-center items-center">
-                        <img class="md:h-20 md:w-24 h-20 w-20 rounded-full" src="images/comex-logo.png" alt="">
+                <div
+                    class="logo bg-white/95 flex  justify-center md:gap-6 gap-4 items-center text-white rounded-md w-fit">
+                    <div class="md:h-20 w-44 h-14 md:w-60 flex justify-center rounded-md object-cover items-center">
+                        <img class="" src="images/comex-logo1.png" alt="">
                     </div>
-                    <h1 class="text-xl md:text-2xl font-bold  text-center"><span
-                            class="text-red-600 font-bold">C</span>omex <span class="text-accent font-bold">I</span>ndia
-                    </h1>
                 </div>
             </a>
 
@@ -747,6 +745,18 @@
                                     <img class="block h-full w-full object-cover object-center"
                                         src="images/reference .png"></img>
                                 </div>
+                                <div class="w-full flex justify-center items-center mb-4">
+                                    <a href="https://drive.google.com/file/d/1_yWcp5OBry-vqEm2jxS6xfN_PecUlLn_/view"
+                                        target="_blank"
+                                        class="w-52 flex items-center justify-between mt-8 py-2 px-4 uppercase bg-accent rounded-lg  cursor-pointer hover:scale-110 duration-300">
+
+                                        <h3 class="text-white text-xl font-bold">download</h3>
+                                        <div class="w-[25%] flex items-center text-white text-4xl gap-0">
+                                            <hr class="w-full border border-white relative -right-3" />
+                                            <ion-icon name="chevron-forward"></ion-icon>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -841,6 +851,18 @@
                                 <div class="  overflow-hidden rounded-xl border-white border-4">
                                     <img class="block h-full w-full object-cover object-center"
                                         src="images/reference .png"></img>
+                                </div>
+                                <div class="w-full flex justify-center items-center">
+                                    <a href="https://drive.google.com/file/d/1_yWcp5OBry-vqEm2jxS6xfN_PecUlLn_/view"
+                                        target="_blank"
+                                        class="w-52 flex items-center justify-between mt-8 py-2 px-4 uppercase bg-accent rounded-lg  cursor-pointer hover:scale-110 duration-300">
+
+                                        <h3 class="text-white text-xl font-bold">download</h3>
+                                        <div class="w-[25%] flex items-center text-white text-4xl gap-0">
+                                            <hr class="w-full border border-white relative -right-3" />
+                                            <ion-icon name="chevron-forward"></ion-icon>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -977,15 +999,17 @@
                 information
                 download our brochure
             </h1>
-            <div
+            <a href="https://drive.google.com/file/d/10WDqWEs8to6S8_9AMISHXCElnXFry-u4/view" target="_blank"
                 class="w-52 flex items-center justify-between mt-8 py-2 px-4 uppercase bg-accent rounded-lg  cursor-pointer hover:scale-110 duration-300">
+
                 <h3 class="text-white text-xl font-bold">download</h3>
                 <div class="w-[25%] flex items-center text-white text-4xl gap-0">
                     <hr class="w-full border border-white relative -right-3" />
                     <ion-icon name="chevron-forward"></ion-icon>
                 </div>
-            </div>
+            </a>
         </div>
+    </div>
     </div>
 
     <!-- contact us -->
@@ -1079,12 +1103,11 @@
             <div class="flex flex-col justify-between sm:px-[18px] md:flex-row">
                 <div class="md:w-80">
                     <a href="#home">
-                        <div class="flex  justify-center md:gap-6 gap-4 items-center text-white rounded-md w-fit">
-                            <img class="md:h-20 md:w-24 h-16 w-20" src="images/comex-logo.png" alt="">
-                            <h1 class="text-md md:text-2xl font-bold  text-center"><span
-                                    class="text-red-600 font-bold">C</span>omex <span
-                                    class="text-accent font-bold">I</span>ndia
-                            </h1>
+                        <div class=" flex  justify-center md:gap-6 gap-4 items-center text-white rounded-md w-fit">
+                            <div
+                                class=" bg-white/95 md:h-20 w-44 h-14 md:w-60 flex justify-center object-cover rounded-md items-center">
+                                <img class="" src="images/comex-logo1.png" alt="">
+                            </div>
                         </div>
                     </a>
 
@@ -1237,6 +1260,17 @@
         } else {
             navbar.classList.remove("md:bg-black/75");
             navbar.classList.add("md:bg-transparent");
+
+        }
+    });
+    window.addEventListener("scroll", function () {
+        var logo = document.querySelector(".logo");
+        if (window.scrollY > 0) {
+            logo.classList.add("md:bg-white/85");
+            logo.classList.remove("md:bg-white/70");
+        } else {
+            logo.classList.remove("md:bg-white/85");
+            logo.classList.add("md:bg-white/70");
 
         }
     });
